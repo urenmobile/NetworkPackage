@@ -83,6 +83,7 @@ public class APIManager: NSObject {
             }
         }
         task.resume()
+        
     }
     
     public func getDataWithCache<T: Decodable>(_ parseType: T.Type, request: URLRequest, completion: @escaping (NetworkResult<[T]>) -> Void) {
